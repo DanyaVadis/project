@@ -1,29 +1,21 @@
 "use strict";
 
-// const res = confirm("You");
-// console.log(res);
+const numberOfFilms =prompt("Сколько фильмов",'');
 
-// const answer = prompt("You have?","18");
-// console.log(answer+5);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// const answers = [];
+const a = prompt('Фильм',''),
+      b = prompt('Оценка',''),
+      c = prompt('Фильма',''),
+      d = prompt('Оценка','');
 
-// answers[0] = prompt("name",'');
-// answers[1] = prompt("first name",'');
-// answers[2] = prompt("last name",'');
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-// console.log(typeof(answers));
-
-// const cat = ='toys';
-
-// console.log()
-
-// console.log(`arr`+`-obj`);
-
-let incr = 10,
-    decr = 10;
-
-console.log(incr++);
-console.log(decr--);
-
-console.log("hi");
+console.log(personalMovieDB);
