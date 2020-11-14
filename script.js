@@ -14,7 +14,7 @@ const personalMovieDB = {
 
 console.log(personalMovieDB);
 let i = 0;
-do{
+while(i<2){
     const a = prompt('Фильм',''),
           b = prompt('Оценка','');
 
@@ -24,14 +24,16 @@ do{
         i--;
     }
     i++;
-}while(i<2)
+}
 
 if (personalMovieDB.count < 10){
-    console.log('мало')
+    console.log('мало');
 } else if(personalMovieDB.count >=10 && personalMovieDB.count < 30){
-    console.log('норм')
+    console.log('норм');
 } else if(personalMovieDB.count >= 30){
-    console.log("много")
+    console.log("много");
 } else {
-    console.log('ошибка')
+    console.log('ошибка,qq');
+    
+
 }
