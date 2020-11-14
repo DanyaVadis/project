@@ -10,12 +10,28 @@ const personalMovieDB = {
     privat: false
 };
 
-const a = prompt('Фильм',''),
-      b = prompt('Оценка',''),
-      c = prompt('Фильма',''),
-      d = prompt('Оценка','');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
+let i = 0;
+do{
+    const a = prompt('Фильм',''),
+          b = prompt('Оценка','');
+
+    if(a != null && b !=null && a != '' && a.length<50 ){
+        personalMovieDB.movies[a] = b;
+    } else {
+        i--;
+    }
+    i++;
+}while(i<2)
+
+if (personalMovieDB.count < 10){
+    console.log('мало')
+} else if(personalMovieDB.count >=10 && personalMovieDB.count < 30){
+    console.log('норм')
+} else if(personalMovieDB.count >= 30){
+    console.log("много")
+} else {
+    console.log('ошибка')
+}
